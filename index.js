@@ -96,10 +96,9 @@ const app = express()
 const cors = require('cors');
 const PORT = 8000
  
-let tasks = [
-   { id: 1, name: 'Do homework' },
-   { id: 2, name: 'Read book' },
-   { id: 3, name: 'Write a program' }]
+let tasks =  [
+      { id: 1, name: 'John', age: 30 },
+      { id: 2, name: 'Maew', age: 25 }]
  
 app.use(cors())
  
@@ -108,3 +107,5 @@ app.get('/', (req,res) => {
 })
  
 app.listen(PORT, () => console.log(`listen at ${PORT}`))
+
+//npm i -g nodemon
